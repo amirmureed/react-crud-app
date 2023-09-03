@@ -1,0 +1,86 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: rgb(50, 172, 172);
+  padding: 10px;
+  margin: 3px;
+  border-radius: 5px;
+  width: 70px;
+}
+
+input {
+  /* display: block; */
+  margin-right: 20px;
+  margin-bottom: 30px;
+  width: 250px;
+  height: 20px;
+}
+
+.delete {
+  cursor: pointer;
+}
+
+p.error {
+  margin: 0;
+  padding: 0;
+  /* margin-bottom: 30px; */
+  color: #ff6f6f;
+  /* text-transform: uppercase; */
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 140px;
+}
+
+div {
+  width: 80%;
+  margin: auto;
+  padding: 1rem;
+}
+
+.container input {
+  display: block;
+  margin: 1rem;
+  padding: 0.5rem;
+  width: 90%;
+  border: none;
+  border-radius: 5px;
+}
+
+.container {
+  background-color: #274d6e;
+  border-radius: 22px;
+  width: 75%;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: rgb(255 255 255);
+  padding: 6px;
+  margin-left: 14px;
+  border-radius: 7px;
+  width: 85px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #274d6e;
+}
+
+span.edit,
+span.delete {
+  cursor: pointer;
+}
