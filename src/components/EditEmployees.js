@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from "react";
 
 function EditEmployees(props) {
-  const [userName, setUserName] = useState(props.empObj.name);
-  const [age, setAge] = useState(props.empObj.age);
+  const [userName, setUserName] = useState("");
+  const [age, setAge] = useState("");
+
+  useEffect(() => {
+    setUserName(props.empObj.name);
+    setAge(props.empObj.age);
+  }, [props.empObj.name]);
 
   const handleupdate = (e) => {
     e.preventDefault();
@@ -13,8 +18,8 @@ function EditEmployees(props) {
       var newEmpArr = props.empArr;
       newEmpArr[index] = {
         id: index + 1,
-        Name: userName || props.empObj.name,
-        Age: age || props.empObj.age,
+        Name: userName,
+        Age: age,
       };
       props.setEmpArr(newEmpArr);
       props.setErrors("");
