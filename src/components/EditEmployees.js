@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 
 function EditEmployees(props) {
-  const [userName, setUserName] = useState("");
-  const [age, setAge] = useState("");
+  const [userName, setUserName] = useState(props.empObj.name);
+  const [age, setAge] = useState(props.empObj.age);
 
   const handleupdate = (e) => {
     e.preventDefault();
@@ -26,13 +26,13 @@ function EditEmployees(props) {
       <div className="container">
         <form onSubmit={handleupdate}>
           <input
-            value={userName || props.empObj.name}
+            value={userName}
             onChange={(e) => setUserName(e.target.value)}
             type="text"
             placeholder="Enter Your Name"
           />
           <input
-            value={age || props.empObj.age}
+            value={age}
             type="number"
             onChange={(e) => setAge(e.target.value)}
             placeholder="Enter Your Age"
