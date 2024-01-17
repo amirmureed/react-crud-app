@@ -22,7 +22,7 @@ function AddEmployees(props) {
 
   return (
     <>
-    <p> Hello Usman, Whatsapp me at +923039715758 , Please Don't Ask Contact details on Fiverr. Fiverr can block our accounts. </p>
+    <p className="contact-info"> Hello Usman, Whatsapp me at +923039715758 , Please Don't Ask Contact details on Fiverr. Fiverr can block our accounts. </p>
       <div className="container">
         <form onSubmit={handleSubmit}>
           <input
